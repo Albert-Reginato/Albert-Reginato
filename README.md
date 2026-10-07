@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:30D8F0,45:1B8BFF,100:A400FF&height=190&section=header&text=Albert%20Reginato&fontSize=46&fontColor=ffffff&fontAlignY=34&desc=Dev%20J%C3%BAnior%20%C2%B7%20Automa%C3%A7%C3%A3o%20%C2%B7%20Infra%20de%20PDV&descAlignY=54&descSize=16" width="100%" alt="" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1200&color=1B8BFF&center=true&vCenter=true&width=640&lines=Node.js+%2B+PowerShell+%2B+IA+em+problema+real;Provisionamento+de+PDV%2C+do+Windows+zerado+ao+TEF;Aprendendo+em+p%C3%BAblico%2C+um+commit+de+cada+vez" alt="Apresentação animada" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1200&color=1B8BFF&center=true&vCenter=true&width=640&lines=Node.js+%2B+PowerShell+%2B+IA+em+problema+real;Provisionamento+de+PDV%2C+do+Windows+zerado+ao+TEF;Do+zero+ao+caixa+rodando%2C+em+p%C3%BAblico" alt="Apresentação animada" />
 
 <p>
   <a href="mailto:albertreginato@multiversoatacado.com"><img src="https://img.shields.io/badge/Email-Fale%20comigo-1B8BFF?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1026" alt="E-mail" /></a>
@@ -17,13 +17,69 @@
 
 </div>
 
+<div align="center">
+
+### 🧾 Minha apresentação sai impressa — é o que eu faço o dia inteiro
+
+```
+ ==========================================
+          MULTIVERSO  ATACADO
+      CUPOM NAO FISCAL   -   PERFIL
+ ==========================================
+  OPERADOR : Albert Reginato
+  TERMINAL : PDV-01
+  MENTOR   : @cesarvcanal
+  SITUACAO : caixa aberto, fila andando
+ ------------------------------------------
+  ITEM  DESCRICAO                    QTD
+ ------------------------------------------
+  001   Node.js                      1 un
+  002   PowerShell                   1 un
+  003   Python                       1 un
+  004   Linux / Ubuntu               1 un
+  005   IA aplicada                  1 un
+  006   Curiosidade teimosa         ** un
+ ------------------------------------------
+  SUBTOTAL .......... 0 diploma de TI
+  DESCONTO .......... 0 atalho tomado
+  ACRESCIMO ......... 1 noite virada
+ ==========================================
+  TOTAL ......... 1 carreira em obras
+ ==========================================
+  PAGAMENTO  : horas de estudo
+  AUTORIZADO : erro assumido em publico
+  TROCO      : conhecimento, devolvido
+               no diario tecnico
+ ------------------------------------------
+        OBRIGADO E VOLTE SEMPRE  :)
+ ==========================================
+```
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
+
 ## 🙋‍♂️ Sobre mim
 
-Sou dev júnior em formação e saí do zero estudando **Node.js**, **PowerShell** e **IA aplicada** — sempre puxando para resolver problema real, não exercício de curso.
+Eu não vim da computação. Vim do outro lado do balcão — e foi exatamente ali que descobri que quase todo problema de loja tem uma solução que ninguém escreveu ainda.
 
-Hoje isso significa construir, na **Multiverso Atacado**, toda a infraestrutura por trás de um PDV físico: provisionar o Windows do zero (*golden image*), automatizar a frota de PCs de loja, integrar hardware (impressora térmica, impressora de etiqueta) e o terminal de pagamento (**TEF**) — incluindo uma prova de conceito rodando esse mesmo TEF em **Linux**.
+Hoje construo, na **Multiverso Atacado**, toda a infraestrutura por trás de um PDV físico: provisionar o Windows do zero (*golden image*), automatizar a frota de PCs de loja, fazer impressora térmica e de etiqueta falarem a língua certa, e integrar o terminal de pagamento (**TEF**) — incluindo uma prova de conceito rodando esse mesmo TEF em **Linux**.
 
-Sou mentorado por [**@cesarvcanal**](https://github.com/cesarvcanal), e prefiro documentar o processo em público — acertos e erros — a esperar estar "pronto" para aparecer.
+Aprendo **Node.js**, **PowerShell** e **IA aplicada** resolvendo problema que já está doendo, não exercício de curso. É mais difícil e dá muito mais errado — e é justamente por isso que gruda.
+
+```powershell
+PS C:\multiverso> Get-Dev -Nome "Albert" | Format-List
+
+Nome         : Albert Reginato
+Funcao       : Dev Júnior · Infra de PDV
+Base         : Multiverso Atacado
+Mentor       : @cesarvcanal
+Stack        : {Node.js, PowerShell, Python, Linux, IA}
+MaiorForca   : Faz hardware teimoso obedecer
+MaiorDefeito : Precisa entender por que funcionou
+Cafe         : [OK] Em execucao
+Status       : Aprendendo em publico, um commit por vez
+```
 
 <table>
 <tr>
@@ -53,6 +109,32 @@ Sou mentorado por [**@cesarvcanal**](https://github.com/cesarvcanal), e prefiro 
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
 
+## 🗺️ Como eu cheguei até aqui
+
+A ordem em que os problemas apareceram — cada um puxou o próximo:
+
+```
+  PONTO ZERO
+  |  Nunca tinha escrito uma linha de codigo.
+  |
+  +-- "Preparar um PC de caixa leva o dia inteiro"
+  |      -> Provisionamento automatizado do Windows, do zero.
+  |
+  +-- "E os outros PCs, espalhados pelas lojas?"
+  |      -> Frota: sinal de vida, auto-cura, acesso remoto.
+  |
+  +-- "A etiqueta sai torta e o driver nao ajuda"
+  |      -> Larguei o driver e falei ZPL direto com a Zebra.
+  |
+  +-- "O cartao precisa passar, e a doc nao existe"
+  |      -> Engenharia reversa do integrador de pagamento.
+  |
+  +-- "E se o caixa rodasse Linux?"
+         -> TEF em Ubuntu: prova de conceito validada.
+```
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
+
 ## 🔭 No que estou trabalhando agora
 
 | | Projeto | Situação |
@@ -67,7 +149,7 @@ Sou mentorado por [**@cesarvcanal**](https://github.com/cesarvcanal), e prefiro 
 
 ## 📖 Diário técnico
 
-Todo avanço de aprendizado eu registro em **[Albert-Reginato/aprendizado](https://github.com/Albert-Reginato/aprendizado)**: o problema real, a hipótese errada e a lição que ficou.
+Registro em **[Albert-Reginato/aprendizado](https://github.com/Albert-Reginato/aprendizado)** o problema real, a hipótese errada e a lição que ficou. Sem a parte onde eu já sabia a resposta.
 
 | Tema | O que tem lá |
 |---|---|
@@ -77,6 +159,19 @@ Todo avanço de aprendizado eu registro em **[Albert-Reginato/aprendizado](https
 | 🧾 [PDV / Hardware](https://github.com/Albert-Reginato/aprendizado/tree/master/pdv) | Impressora de etiqueta Zebra — do driver genérico ao ZPL puro |
 | 💳 [TEF](https://github.com/Albert-Reginato/aprendizado/tree/master/tef) | Engenharia reversa do integrador de pagamento no Windows |
 | 🐧 [TEF em Linux](https://github.com/Albert-Reginato/aprendizado/tree/master/linux) | `ctypes` + biblioteca nativa do fornecedor: três defeitos silenciosos encontrados e corrigidos |
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
+
+## 🧠 O que o PDV me ensinou e curso nenhum ensina
+
+> **Falhar alto é melhor que falhar bonito.**
+> Um `R$ 0,00` no cupom é feio, mas alguém vê. Um valor plausível e errado passa pelo caixa, pelo cliente e pela conferência — e só aparece no fechamento do mês.
+
+> **Hardware não lê documentação.**
+> O manual do driver dizia que imprimia. A impressora discordava. Ganhou a impressora.
+
+> **Se depende de alguém lembrar, já quebrou.**
+> Todo processo que precisa de "aí é só clicar aqui" vira chamado no sábado à noite.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
 
@@ -111,13 +206,15 @@ Todo avanço de aprendizado eu registro em **[Albert-Reginato/aprendizado](https
 
 </div>
 
-> 📌 A maior parte do código de produção mora em repositórios privados (é infraestrutura real de loja). O [diário técnico](https://github.com/Albert-Reginato/aprendizado) é onde mostro como penso e o que aprendo construindo isso.
+> 📌 A maior parte do código de produção mora em repositórios privados — é infraestrutura real de loja, com caixa aberto. O [diário técnico](https://github.com/Albert-Reginato/aprendizado) é onde mostro como penso construindo isso.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
 
 <div align="center">
 
 ### 📬 Vamos conversar
+
+Se você tem um problema chato de loja, de automação ou de hardware teimoso — esse é o meu tipo favorito de conversa.
 
 <a href="mailto:albertreginato@multiversoatacado.com"><img src="https://img.shields.io/badge/albertreginato@multiversoatacado.com-1B8BFF?style=flat-square&logo=gmail&logoColor=white&labelColor=0D1026" alt="E-mail" /></a>
 
@@ -128,3 +225,8 @@ Todo avanço de aprendizado eu registro em **[Albert-Reginato/aprendizado](https
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:A400FF,55:1B8BFF,100:30D8F0&height=130&section=footer" width="100%" alt="" />
 
 </div>
+
+<!--
+  Chegou a abrir o codigo-fonte deste README? Essa curiosidade
+  e exatamente o que me trouxe ate aqui. Manda um e-mail. :)
+-->
