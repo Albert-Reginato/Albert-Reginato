@@ -2,7 +2,9 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:30D8F0,45:1B8BFF,100:A400FF&height=190&section=header&text=Albert%20Reginato&fontSize=46&fontColor=ffffff&fontAlignY=34&desc=Dev%20J%C3%BAnior%20%C2%B7%20Automa%C3%A7%C3%A3o%20%C2%B7%20Infra%20de%20PDV&descAlignY=54&descSize=16" width="100%" alt="" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1200&color=1B8BFF&center=true&vCenter=true&width=640&lines=Node.js+%2B+PowerShell+%2B+IA+em+problema+real;Provisionamento+de+PDV%2C+do+Windows+zerado+ao+TEF;Do+zero+ao+caixa+rodando%2C+em+p%C3%BAblico" alt="Apresentação animada" />
+**Node.js + PowerShell + IA em problema real**  
+**Provisionamento de PDV, do Windows zerado ao TEF**  
+**Do zero ao caixa rodando, em público**
 
 <p>
   <a href="mailto:albertreginato@multiversoatacado.com"><img src="https://img.shields.io/badge/Email-Fale%20comigo-1B8BFF?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1026" alt="E-mail" /></a>
