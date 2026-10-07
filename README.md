@@ -199,14 +199,36 @@ Registro em **[Albert-Reginato/aprendizado](https://github.com/Albert-Reginato/a
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Albert-Reginato&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1026&title_color=30D8F0&icon_color=A400FF&text_color=C9D1E8" alt="Estatísticas do GitHub" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Albert-Reginato&layout=compact&hide_border=true&langs_count=8&bg_color=0D1026&title_color=30D8F0&text_color=C9D1E8" alt="Linguagens mais usadas" />
-
-<img src="https://streak-stats.demolab.com/?user=Albert-Reginato&hide_border=true&background=0D1026&stroke=584DFF&ring=A400FF&fire=30D8F0&currStreakNum=FFFFFF&sideNums=C9D1E8&currStreakLabel=30D8F0&sideLabels=C9D1E8&dates=8891B0" alt="Sequência de contribuições" />
+<table>
+<tr>
+<td align="center" width="25%"><h3>3</h3><sub>sistemas em<br/>produção na loja</sub></td>
+<td align="center" width="25%"><h3>6</h3><sub>frentes no<br/>diário técnico</sub></td>
+<td align="center" width="25%"><h3>2</h3><sub>sistemas operacionais<br/>(Windows e Linux)</sub></td>
+<td align="center" width="25%"><h3>0</h3><sub>diplomas de TI<br/>até agora</sub></td>
+</tr>
+</table>
 
 </div>
 
-> 📌 A maior parte do código de produção mora em repositórios privados — é infraestrutura real de loja, com caixa aberto. O [diário técnico](https://github.com/Albert-Reginato/aprendizado) é onde mostro como penso construindo isso.
+> 📌 **Por que não tem gráfico de contribuição aqui:** meus commits moram em
+> repositórios privados — é infraestrutura real de loja, com caixa aberto e
+> cliente na fila. Os contadores automáticos do GitHub só enxergam o que é
+> público, então mostrariam zero e mentiriam a meu respeito.
+> O [diário técnico](https://github.com/Albert-Reginato/aprendizado) é onde
+> mostro como penso construindo isso.
+
+<!--
+  PARA RELIGAR OS CARTOES AUTOMATICOS:
+  quando houver repositorio publico com codigo, basta descomentar o bloco
+  abaixo. Hoje ele mostraria 0 commits, 0 estrelas e "No languages data".
+
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Albert-Reginato&show_icons=true&hide_border=true&bg_color=0D1026&title_color=30D8F0&icon_color=A400FF&text_color=C9D1E8" alt="Estatisticas do GitHub" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Albert-Reginato&layout=compact&hide_border=true&langs_count=8&bg_color=0D1026&title_color=30D8F0&text_color=C9D1E8" alt="Linguagens mais usadas" />
+  <img src="https://streak-stats.demolab.com/?user=Albert-Reginato&hide_border=true&background=0D1026&stroke=584DFF&ring=A400FF&fire=30D8F0&currStreakNum=FFFFFF&sideNums=C9D1E8&currStreakLabel=30D8F0&sideLabels=C9D1E8&dates=8891B0" alt="Sequencia de contribuicoes" />
+
+  NAO usar o parametro include_all_commits=true: ele faz o cartao falhar com
+  "Something went wrong - Could not fetch total commits". Testado em 07/10/2026.
+-->
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
 
