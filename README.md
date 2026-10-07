@@ -1,50 +1,73 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Ol%C3%A1%2C+eu+sou+o+Albert+%F0%9F%91%8B;Dev+J%C3%BAnior+%7C+Vibe+Coder+%F0%9F%9A%A7;Node.js+%2B+PowerShell+%2B+IA+para+resolver+problemas+reais;Aprendendo+em+p%C3%BAblico%2C+um+commit+de+cada+vez" alt="Typing SVG" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:30D8F0,45:1B8BFF,100:A400FF&height=190&section=header&text=Albert%20Reginato&fontSize=46&fontColor=ffffff&fontAlignY=34&desc=Dev%20J%C3%BAnior%20%C2%B7%20Automa%C3%A7%C3%A3o%20%C2%B7%20Infra%20de%20PDV&descAlignY=54&descSize=16" width="100%" alt="" />
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1200&color=1B8BFF&center=true&vCenter=true&width=640&lines=Node.js+%2B+PowerShell+%2B+IA+em+problema+real;Provisionamento+de+PDV%2C+do+Windows+zerado+ao+TEF;Aprendendo+em+p%C3%BAblico%2C+um+commit+de+cada+vez" alt="Apresentação animada" />
 
 <p>
-  <a href="mailto:albertreginato@multiversoatacado.com">
-    <img src="https://img.shields.io/badge/Email-albertreginato%40multiversoatacado.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <!-- LINKEDIN: o Albert vai passar o endereço novo. Quando chegar, descomentar a
-       linha abaixo e trocar SEU-PERFIL pelo trecho final do endereço dele.
-  <a href="https://www.linkedin.com/in/SEU-PERFIL/">
-    <img src="https://img.shields.io/badge/LinkedIn-Albert%20Reginato-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
+  <a href="mailto:albertreginato@multiversoatacado.com"><img src="https://img.shields.io/badge/Email-Fale%20comigo-1B8BFF?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1026" alt="E-mail" /></a>
+  <a href="https://github.com/Albert-Reginato/aprendizado"><img src="https://img.shields.io/badge/Di%C3%A1rio%20t%C3%A9cnico-Aprendizado-584DFF?style=for-the-badge&logo=bookstack&logoColor=white&labelColor=0D1026" alt="Diário técnico" /></a>
+  <!-- LINKEDIN: quando tiver o endereço, descomente a linha abaixo e troque SEU-PERFIL
+  <a href="https://www.linkedin.com/in/SEU-PERFIL/"><img src="https://img.shields.io/badge/LinkedIn-Albert%20Reginato-30D8F0?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1026" alt="LinkedIn" /></a>
   -->
-  <a href="https://github.com/Albert-Reginato/aprendizado">
-    <img src="https://img.shields.io/badge/Diário%20técnico-Aprendizado-2ea44f?style=for-the-badge&logo=bookstack&logoColor=white" />
-  </a>
+  <img src="https://komarev.com/ghpvc/?username=Albert-Reginato&label=Visitas&color=A400FF&style=for-the-badge" alt="Contador de visitas" />
 </p>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
 
 </div>
 
-<br/>
-
 ## 🙋‍♂️ Sobre mim
 
-Sou dev júnior e **vibe coder** em formação. Saí do zero estudando **Node.js**,
-**PowerShell** e **Inteligência Artificial** aplicada, sempre puxando pra
-resolver problema real — não exercício de curso.
+Sou dev júnior em formação e saí do zero estudando **Node.js**, **PowerShell** e **IA aplicada** — sempre puxando para resolver problema real, não exercício de curso.
 
-Hoje isso significa construir, na Multiverso Atacado, a infraestrutura
-inteira por trás de um PDV físico: provisionar o Windows do zero
-(**golden image**), automatizar frota de PCs de loja, integrar hardware
-(impressora térmica, impressora de etiqueta) e o terminal de pagamento
-(**TEF**) — inclusive uma prova de conceito rodando esse mesmo TEF em
-**Linux**.
+Hoje isso significa construir, na **Multiverso Atacado**, toda a infraestrutura por trás de um PDV físico: provisionar o Windows do zero (*golden image*), automatizar a frota de PCs de loja, integrar hardware (impressora térmica, impressora de etiqueta) e o terminal de pagamento (**TEF**) — incluindo uma prova de conceito rodando esse mesmo TEF em **Linux**.
 
-Sou mentorado por [**@cesarvcanal**](https://github.com/cesarvcanal), e
-prefiro documentar o processo em público — os acertos e os erros — a esperar
-estar "pronto" pra aparecer.
+Sou mentorado por [**@cesarvcanal**](https://github.com/cesarvcanal), e prefiro documentar o processo em público — acertos e erros — a esperar estar "pronto" para aparecer.
 
-<br/>
+<table>
+<tr>
+<td width="33%" align="center">
+
+### 🏪
+**PDV de verdade**<br/>
+<sub>Loja aberta, caixa rodando.<br/>Erro aqui para a fila.</sub>
+
+</td>
+<td width="33%" align="center">
+
+### 🤖
+**Automação primeiro**<br/>
+<sub>Se precisa de clique manual,<br/>ainda não está pronto.</sub>
+
+</td>
+<td width="33%" align="center">
+
+### 📖
+**Aprendizado em público**<br/>
+<sub>A hipótese errada também<br/>vira registro.</sub>
+
+</td>
+</tr>
+</table>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
+
+## 🔭 No que estou trabalhando agora
+
+| | Projeto | Situação |
+|:--:|---|---|
+| 🖥️ | **Golden Image** — provisionamento automatizado de PDVs | Em produção · *repo privado* |
+| 💳 | **TEF ↔ PDV em Linux/Ubuntu** | Prova de conceito validada · *repo privado* |
+| 🧰 | **PowerShell + Node.js** para automação de frota | Em evolução contínua |
+| 🎓 | Mentoria técnica com [@cesarvcanal](https://github.com/cesarvcanal) | Semanal |
+| 📚 | [Diário técnico público](https://github.com/Albert-Reginato/aprendizado) | Atualizado a cada avanço |
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
 
 ## 📖 Diário técnico
 
-Todo avanço de aprendizado (não a estrutura do negócio — isso fica nos
-privados) eu registro em **[Albert-Reginato/aprendizado](https://github.com/Albert-Reginato/aprendizado)**:
-o problema real, a hipótese errada, e a lição que ficou. Alguns destaques:
+Todo avanço de aprendizado eu registro em **[Albert-Reginato/aprendizado](https://github.com/Albert-Reginato/aprendizado)**: o problema real, a hipótese errada e a lição que ficou.
 
 | Tema | O que tem lá |
 |---|---|
@@ -55,50 +78,53 @@ o problema real, a hipótese errada, e a lição que ficou. Alguns destaques:
 | 💳 [TEF](https://github.com/Albert-Reginato/aprendizado/tree/master/tef) | Engenharia reversa do integrador de pagamento no Windows |
 | 🐧 [TEF em Linux](https://github.com/Albert-Reginato/aprendizado/tree/master/linux) | `ctypes` + biblioteca nativa do fornecedor: três defeitos silenciosos encontrados e corrigidos |
 
-<br/>
-
-## 🔭 No que estou trabalhando agora
-
-| | |
-|---|---|
-| 🖥️ | Golden Image — provisionamento automatizado de PDVs *(repositório privado)* |
-| 💳 | Integração TEF ↔ PDV para Linux/Ubuntu *(prova de conceito validada — repositório privado)* |
-| 🧠 | PowerShell + Node.js aplicados a automação de frota |
-| 🎓 | Mentoria com [@cesarvcanal](https://github.com/cesarvcanal) |
-| 📚 | Aprendizado em público — [código, testes e os erros que fazem parte do caminho](https://github.com/Albert-Reginato/aprendizado) |
-
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
 
 ## 🛠️ Stack & Ferramentas
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,js,python,linux,ubuntu,git,github,vscode,bash,ai" />
+
+**Linguagens e runtime**
+
+<img src="https://skillicons.dev/icons?i=nodejs,js,python,bash,powershell&theme=dark" alt="Node.js, JavaScript, Python, Bash, PowerShell" />
+
+**Sistemas e infraestrutura**
+
+<img src="https://skillicons.dev/icons?i=windows,linux,ubuntu,docker&theme=dark" alt="Windows, Linux, Ubuntu, Docker" />
+
+**Ferramentas do dia a dia**
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode,notion,ai&theme=dark" alt="Git, GitHub, VS Code, Notion, IA" />
+
 </div>
 
-<br/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
 
-## 📊 GitHub Stats
+## 📊 Números
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Albert-Reginato&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Albert-Reginato&layout=compact&theme=tokyonight&hide_border=true" />
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Albert-Reginato&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1026&title_color=30D8F0&icon_color=A400FF&text_color=C9D1E8" alt="Estatísticas do GitHub" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Albert-Reginato&layout=compact&hide_border=true&langs_count=8&bg_color=0D1026&title_color=30D8F0&text_color=C9D1E8" alt="Linguagens mais usadas" />
+
+<img src="https://streak-stats.demolab.com/?user=Albert-Reginato&hide_border=true&background=0D1026&stroke=584DFF&ring=A400FF&fire=30D8F0&currStreakNum=FFFFFF&sideNums=C9D1E8&currStreakLabel=30D8F0&sideLabels=C9D1E8&dates=8891B0" alt="Sequência de contribuições" />
+
 </div>
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=Albert-Reginato&theme=tokyonight&hide_border=true" />
-</div>
+> 📌 A maior parte do código de produção mora em repositórios privados (é infraestrutura real de loja). O [diário técnico](https://github.com/Albert-Reginato/aprendizado) é onde mostro como penso e o que aprendo construindo isso.
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:30D8F0,50:584DFF,100:A400FF&height=3" width="100%" alt="" />
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Albert-Reginato&theme=tokyonight&no-frame=true&row=1&column=6" />
-</div>
 
-> 📌 A maior parte do código de produção mora em repositórios privados (é
-> infraestrutura real de loja). O [diário técnico](https://github.com/Albert-Reginato/aprendizado)
-> é onde mostro como penso e o que aprendo construindo isso — atualizado
-> conforme o projeto avança, não de uma vez.
+### 📬 Vamos conversar
 
-<br/>
+<a href="mailto:albertreginato@multiversoatacado.com"><img src="https://img.shields.io/badge/albertreginato@multiversoatacado.com-1B8BFF?style=flat-square&logo=gmail&logoColor=white&labelColor=0D1026" alt="E-mail" /></a>
 
-<div align="center">
-  <i>Se cheguei até aqui é porque acredito que aprender em público vale mais do que parecer pronto.</i>
+<br/><br/>
+
+<i>Se cheguei até aqui é porque acredito que aprender em público<br/>vale mais do que parecer pronto.</i>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:A400FF,55:1B8BFF,100:30D8F0&height=130&section=footer" width="100%" alt="" />
+
 </div>
