@@ -149,7 +149,7 @@ Coordenar logística é decidir com informação incompleta e prazo correndo. O 
   003   Python                       1 un
   004   Linux / Ubuntu               1 un
   005   IA aplicada                  1 un
-  006   Chao de operacao            5+ an
+  006   Chao de operacao (5+ anos)   1 un
   007   Curiosidade teimosa         ** un
  ------------------------------------------
   SUBTOTAL .......... 0 diploma de TI
@@ -319,7 +319,7 @@ Se você tem um problema chato de operação, de loja, de automação ou de hard
 
 <i>Quem opera o problema todo dia tem uma vantagem injusta na hora de resolvê-lo.<br/>Eu só resolvi aprender a escrever a solução também.</i>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:A400FF,55:1B8BFF,100:30D8F0&height=130&section=footer" width="100%" alt="" />
+<img src="assets/rodape.svg" width="100%" alt="" />
 
 </div>
 
