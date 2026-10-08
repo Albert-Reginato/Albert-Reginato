@@ -95,7 +95,7 @@ Status       : Automatizando o que eu mesmo opero
    MULTIVERSO ATACADO     ORDEM DE CARREGAMENTO
  ================================================
   EMISSOR   : Albert Reginato
-  FUNCAO    : Coordenacao Logistica
+  FUNCAO    : Coordenador Logistico
   VEICULO   : VW DELIVERY 11-150   2025 / 2026
   ROTA      : operacao -> codigo -> operacao
  ------------------------------------------------
@@ -273,6 +273,12 @@ Registro em **[Albert-Reginato/aprendizado](https://github.com/Albert-Reginato/a
 <td align="center" width="25%"><h3>0</h3><sub>diplomas de TI<br/>até agora</sub></td>
 </tr>
 </table>
+
+</div>
+
+<div align="center">
+
+<img src="assets/descarga.svg" width="100%" alt="Dois ajudantes descarregando o sider e montando um palete de cerveja" />
 
 </div>
 
