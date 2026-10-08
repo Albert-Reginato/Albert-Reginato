@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 12" width="1280" height="12" role="presentation">
+  <defs>
+    <linearGradient id="d" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#2BE9F5" stop-opacity=".15"/>
+      <stop offset="25%"  stop-color="#2BE9F5"/>
+      <stop offset="55%"  stop-color="#2F7BFF"/>
+      <stop offset="85%"  stop-color="#B14BFF"/>
+      <stop offset="100%" stop-color="#B14BFF" stop-opacity=".15"/>
+    </linearGradient>
+    <radialGradient id="p" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity=".95"/>
+      <stop offset="40%"  stop-color="#8FE9FF" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#8FE9FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="b" x="-50%" y="-400%" width="200%" height="900%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <style>
+      @keyframes run { 0%{transform:translateX(0)} 100%{transform:translateX(1700px)} }
+      .pulse { animation: run 4.2s linear infinite; }
+      @media (prefers-reduced-motion: reduce) { .pulse { animation: none; opacity:.4 } }
+    </style>
+  </defs>
+  <rect x="0" y="4.6" width="1280" height="2.8" rx="1.4" fill="url(#d)" filter="url(#b)" opacity=".75"/>
+  <rect x="0" y="5.2" width="1280" height="1.6" rx=".8" fill="url(#d)"/>
+  <ellipse class="pulse" cx="-200" cy="6" rx="130" ry="6" fill="url(#p)"/>
+</svg>
