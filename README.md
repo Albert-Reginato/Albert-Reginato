@@ -278,16 +278,31 @@ Registro em **[Albert-Reginato/aprendizado](https://github.com/Albert-Reginato/a
 
 <div align="center">
 
-<img src="assets/descarga.svg" width="100%" alt="Dois ajudantes descarregando o sider e montando um palete de cerveja" />
+<img src="assets/doca-commits.svg" width="100%" alt="Dois ajudantes descarregando o sider; a caixa arremessada assenta numa vaga da DOCA 01, que funciona como painel de commits" />
 
 </div>
 
-> 📌 **Por que não tem gráfico de contribuição aqui:** meus commits moram em
-> repositórios privados — é infraestrutura real de loja, com caixa aberto e
-> cliente na fila. Os contadores automáticos do GitHub só enxergam o que é
-> público, então mostrariam zero e mentiriam a meu respeito.
+> 📌 **Cada caixa arremessada é um commit meu.** A grade da DOCA 01 tem 48 vagas:
+> os 48 commits que eu fiz em outubro de 2026, em 5 repositórios. A maior parte
+> mora em repositório privado, porque é infraestrutura real de loja — caixa aberto
+> e cliente na fila. O GitHub conta o volume, mas não mostra onde foi parar.
 > O [diário técnico](https://github.com/Albert-Reginato/aprendizado) é onde
 > mostro como penso construindo isso.
+
+<!--
+  TEXTO ANTERIOR, guardado caso eu queira voltar atras:
+
+  > 📌 **Por que não tem gráfico de contribuição aqui:** meus commits moram em
+  > repositórios privados — é infraestrutura real de loja, com caixa aberto e
+  > cliente na fila. Os contadores automáticos do GitHub só enxergam o que é
+  > público, então mostrariam zero e mentiriam a meu respeito.
+  > O [diário técnico](https://github.com/Albert-Reginato/aprendizado) é onde
+  > mostro como penso construindo isso.
+
+  Deixou de valer em 08/10/2026: a opcao "incluir contribuicoes privadas no
+  perfil" foi ligada, e o grafico do GitHub passou a mostrar 113 contribuicoes
+  em vez de zero.
+-->
 
 <!--
   PARA RELIGAR OS CARTOES AUTOMATICOS:

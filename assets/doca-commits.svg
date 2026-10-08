@@ -1,0 +1,405 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360"
+     role="img" aria-label="Dois ajudantes descarregando o sider; a caixa arremessada assenta numa vaga da doca, que funciona como painel de commits">
+
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#2BE9F5"/>
+      <stop offset="40%"  stop-color="#1B8BFF"/>
+      <stop offset="75%"  stop-color="#5A4BFF"/>
+      <stop offset="100%" stop-color="#B14BFF"/>
+    </linearGradient>
+    <linearGradient id="gf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2BE9F5"/><stop offset="50%" stop-color="#2F7BFF"/><stop offset="100%" stop-color="#B14BFF"/>
+    </linearGradient>
+    <linearGradient id="corpo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16224F"/><stop offset="100%" stop-color="#0A0F28"/>
+    </linearGradient>
+    <linearGradient id="vidro" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFE39A"/>
+      <stop offset="45%"  stop-color="#E79A2E"/>
+      <stop offset="100%" stop-color="#A75C14"/>
+    </linearGradient>
+    <linearGradient id="madeira" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A1E3C"/><stop offset="100%" stop-color="#160F26"/>
+    </linearGradient>
+    <radialGradient id="gb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1B8BFF" stop-opacity=".36"/><stop offset="100%" stop-color="#1B8BFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gv" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A24BFF" stop-opacity=".36"/><stop offset="100%" stop-color="#A24BFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6E4BFF" stop-opacity=".28"/><stop offset="100%" stop-color="#6E4BFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="s" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="t" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2"/></filter>
+    <clipPath id="fr"><rect x="0" y="0" width="1280" height="360" rx="14"/></clipPath>
+
+    <style>
+      /* O fardo é PASSADO de mão em mão e assentado no palete.
+         Nada de queda: o movimento acompanha os braços dos dois. */
+      @keyframes passa {
+        0%        { opacity:0; transform: translate(0,0)          rotate(0deg); }
+        5%        { opacity:1; transform: translate(0,0)          rotate(0deg); }
+        18%       { opacity:1; transform: translate(36px,40px)    rotate(-9deg); }
+        30%       { opacity:1; transform: translate(68px,74px)    rotate(-15deg); }
+        44%       { opacity:1; transform: translate(68px,74px)    rotate(-15deg); }
+        58%       { opacity:1; transform: translate(120px,58px)   rotate(-7deg); }
+        76%       { opacity:1; transform: translate(192px,32px)   rotate(0deg); }
+        94%       { opacity:1; transform: translate(192px,32px)   rotate(0deg); }
+        100%      { opacity:0; transform: translate(192px,32px)   rotate(0deg); }
+      }
+      /* bracos de quem esta em cima: entrega e volta a buscar outro */
+      @keyframes bracoCima {
+        0%,6%    { transform: rotate(-40deg); }
+        24%      { transform: rotate(-58deg); }
+        44%      { transform: rotate(6deg); }
+        64%      { transform: rotate(32deg); }
+        86%,100% { transform: rotate(-40deg); }
+      }
+      /* bracos de quem esta no chao: recebe a esquerda, assenta a direita */
+      @keyframes bracoChao {
+        0%,8%    { transform: rotate(22deg); }
+        28%      { transform: rotate(66deg); }
+        44%      { transform: rotate(44deg); }
+        64%      { transform: rotate(-72deg); }
+        80%      { transform: rotate(-100deg); }
+        92%,100% { transform: rotate(22deg); }
+      }
+      /* o corpo acompanha: ele gira o tronco e se inclina para assentar */
+      @keyframes tronco {
+        0%,40%   { transform: translate(0,0); }
+        64%      { transform: translate(12px,2px); }
+        80%      { transform: translate(18px,6px); }
+        94%,100% { transform: translate(0,0); }
+      }
+      /* quem esta em cima flexiona de leve ao entregar */
+      @keyframes flexao {
+        0%,10%   { transform: translateY(0); }
+        26%      { transform: translateY(3px); }
+        60%      { transform: translateY(0); }
+        72%      { transform: translateY(4px); }
+        90%,100% { transform: translateY(0); }
+      }
+      @keyframes cortina { 0%,100%{transform:translateX(0)} 50%{transform:translateX(4px)} }
+      @keyframes respira { 0%,100%{opacity:.28} 50%{opacity:.78} }
+
+      .passa   { animation: passa 4.2s cubic-bezier(.4,.05,.45,1) infinite; }
+      .bcima   { transform-box: fill-box; transform-origin: 50% 0%; animation: bracoCima 4.2s ease-in-out infinite; }
+      .bchao   { transform-box: fill-box; transform-origin: 50% 0%; animation: bracoChao 4.2s ease-in-out infinite; }
+      .tronco  { animation: tronco 4.2s ease-in-out infinite; }
+      .flexao  { animation: flexao 4.2s ease-in-out infinite; }
+      .cortina { animation: cortina 5s ease-in-out infinite; }
+      .arco    { animation: respira 7s ease-in-out infinite; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .passa,.bcima,.bchao,.tronco,.flexao,.cortina,.arco { animation: none; }
+        .passa { opacity: 1; }
+      }
+    </style>
+
+    <!-- FARDO: pacote plastificado de garrafas, com gargalos para fora -->
+    <g id="fardo">
+      <g fill="#A96A1C" stroke="#D99A42" stroke-width="1.2">
+        <rect x="-21" y="-25" width="8" height="9" rx="2.5"/>
+        <rect x="-8"  y="-25" width="8" height="9" rx="2.5"/>
+        <rect x="5"   y="-25" width="8" height="9" rx="2.5"/>
+        <rect x="18"  y="-25" width="8" height="9" rx="2.5"/>
+      </g>
+      <rect x="-29" y="-18" width="58" height="37" rx="3.5" fill="url(#vidro)" stroke="#FFEDC2" stroke-width="1.8"/>
+      <g fill="#8B4D10" opacity=".40">
+        <rect x="-25" y="-15" width="11" height="31" rx="3.5"/>
+        <rect x="-12" y="-15" width="11" height="31" rx="3.5"/>
+        <rect x="1"   y="-15" width="11" height="31" rx="3.5"/>
+        <rect x="14"  y="-15" width="11" height="31" rx="3.5"/>
+      </g>
+      <rect x="-29" y="-6" width="58" height="13" fill="#132356" opacity=".9"/>
+      <rect x="-29" y="-6" width="58" height="2"  fill="#2BE9F5" opacity=".55"/>
+      <path d="M -23 17 L -7 -17 L 1 -17 L -15 17 Z" fill="#FFFFFF" opacity=".17"/>
+      <path d="M 8 17 L 16 -17 L 20 -17 L 12 17 Z"   fill="#FFFFFF" opacity=".10"/>
+    </g>
+
+    <!-- PALETE de madeira, vista lateral -->
+    <g id="palete">
+      <rect x="0"   y="0"  width="180" height="8" rx="2" fill="url(#madeira)" stroke="#C98A3A" stroke-width="1.6"/>
+      <rect x="5"   y="8"  width="26"  height="13"      fill="url(#madeira)" stroke="#C98A3A" stroke-width="1.4"/>
+      <rect x="77"  y="8"  width="26"  height="13"      fill="url(#madeira)" stroke="#C98A3A" stroke-width="1.4"/>
+      <rect x="149" y="8"  width="26"  height="13"      fill="url(#madeira)" stroke="#C98A3A" stroke-width="1.4"/>
+      <rect x="0"   y="21" width="180" height="7" rx="2" fill="url(#madeira)" stroke="#C98A3A" stroke-width="1.6"/>
+    </g>
+
+    <!-- AJUDANTE: pes em y=0, ombro em y=-94, altura ~128 -->
+    <g id="homem">
+      <path d="M -24 0 L -24 -11 L -8 -11 L -8 0 Z" fill="#0A0F28" stroke="#2BE9F5" stroke-width="1.8"/>
+      <path d="M 8 0 L 8 -11 L 24 -11 L 24 0 Z"     fill="#0A0F28" stroke="#2BE9F5" stroke-width="1.8"/>
+      <path d="M -15 -60 L -21 -12 L -7 -12 L -2 -42 L 3 -12 L 18 -12 L 13 -60 Z"
+            fill="url(#corpo)" stroke="#2BE9F5" stroke-width="2"/>
+      <path d="M -17 -98 Q -21 -78 -16 -58 L 15 -58 Q 20 -78 15 -98 Z"
+            fill="url(#corpo)" stroke="#2BE9F5" stroke-width="2.2"/>
+      <path d="M -18 -82 L 17 -82 L 17 -74 L -18 -74 Z" fill="#2BE9F5" opacity=".55"/>
+      <path d="M -9 -98 L -4 -58 M 7 -98 L 3 -58" stroke="#2BE9F5" stroke-width="2" opacity=".45" fill="none"/>
+      <path d="M -6 -102 L 5 -102 L 4 -96 L -5 -96 Z" fill="#0A0F28" stroke="#2BE9F5" stroke-width="1.6"/>
+      <circle cx="0" cy="-114" r="12" fill="#0A0F28" stroke="#2BE9F5" stroke-width="2.4"/>
+      <path d="M -12 -120 Q 0 -130 12 -120 L 12 -117 L -12 -117 Z" fill="#FFD36B" opacity=".9"/>
+      <path d="M 12 -119 L 22 -116 L 22 -112 L 12 -114 Z" fill="#FFD36B" opacity=".75"/>
+    </g>
+  </defs>
+
+  <g clip-path="url(#fr)">
+    <rect width="1280" height="360" fill="#04060F"/>
+    <ellipse cx="280"  cy="150" rx="440" ry="280" fill="url(#gb)"/>
+    <ellipse cx="1010" cy="170" rx="440" ry="280" fill="url(#gv)"/>
+
+    <g fill="none" stroke-linecap="round">
+      <path class="arco" d="M -40 380 C 150 120, 380 0, 640 -60"   stroke="#2BE9F5" stroke-width="2" opacity=".4" filter="url(#t)"/>
+      <path class="arco" d="M 1320 380 C 1150 120, 920 0, 660 -60" stroke="#B14BFF" stroke-width="2" opacity=".4" filter="url(#t)"/>
+    </g>
+
+    <!-- ============ DOCA 01 = PAINEL DE COMMITS ============
+         A porta da doca virou grade: 6 vagas x 8 niveis = 48 caixas.
+         Cada vaga ocupada e um commit. A vaga de cima a esquerda fica
+         livre: e nela que o fardo arremessado assenta a cada volta. -->
+    <g id="doca">
+      <rect x="1040" y="62" width="196" height="250" rx="6" fill="#070B1C" stroke="#3E6BC8" stroke-width="2.4"/>
+      <rect class="vagaLivre" x="1048.0" y="70.0" width="26" height="25" rx="2" fill="#0A1030" stroke="#2BE9F5" stroke-width="1.4"/>
+      <rect x="1078.0" y="70.0" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1091.0,83.8) scale(.45)"/>
+      <rect x="1108.0" y="70.0" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1121.0,83.8) scale(.45)"/>
+      <rect x="1138.0" y="70.0" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1151.0,83.8) scale(.45)"/>
+      <rect x="1168.0" y="70.0" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1181.0,83.8) scale(.45)"/>
+      <rect x="1198.0" y="70.0" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1211.0,83.8) scale(.45)"/>
+      <rect x="1048.0" y="99.2" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1061.0,113.0) scale(.45)"/>
+      <rect x="1078.0" y="99.2" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1091.0,113.0) scale(.45)"/>
+      <rect x="1108.0" y="99.2" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1121.0,113.0) scale(.45)"/>
+      <rect x="1138.0" y="99.2" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1151.0,113.0) scale(.45)"/>
+      <rect x="1168.0" y="99.2" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1181.0,113.0) scale(.45)"/>
+      <rect x="1198.0" y="99.2" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1211.0,113.0) scale(.45)"/>
+      <rect x="1048.0" y="128.5" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1061.0,142.3) scale(.45)"/>
+      <rect x="1078.0" y="128.5" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1091.0,142.3) scale(.45)"/>
+      <rect x="1108.0" y="128.5" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1121.0,142.3) scale(.45)"/>
+      <rect x="1138.0" y="128.5" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1151.0,142.3) scale(.45)"/>
+      <rect x="1168.0" y="128.5" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1181.0,142.3) scale(.45)"/>
+      <rect x="1198.0" y="128.5" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1211.0,142.3) scale(.45)"/>
+      <rect x="1048.0" y="157.8" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1061.0,171.7) scale(.45)"/>
+      <rect x="1078.0" y="157.8" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1091.0,171.7) scale(.45)"/>
+      <rect x="1108.0" y="157.8" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1121.0,171.7) scale(.45)"/>
+      <rect x="1138.0" y="157.8" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1151.0,171.7) scale(.45)"/>
+      <rect x="1168.0" y="157.8" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1181.0,171.7) scale(.45)"/>
+      <rect x="1198.0" y="157.8" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1211.0,171.7) scale(.45)"/>
+      <rect x="1048.0" y="187.0" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1061.0,200.8) scale(.45)"/>
+      <rect x="1078.0" y="187.0" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1091.0,200.8) scale(.45)"/>
+      <rect x="1108.0" y="187.0" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1121.0,200.8) scale(.45)"/>
+      <rect x="1138.0" y="187.0" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1151.0,200.8) scale(.45)"/>
+      <rect x="1168.0" y="187.0" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1181.0,200.8) scale(.45)"/>
+      <rect x="1198.0" y="187.0" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1211.0,200.8) scale(.45)"/>
+      <rect x="1048.0" y="216.2" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1061.0,230.0) scale(.45)"/>
+      <rect x="1078.0" y="216.2" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1091.0,230.0) scale(.45)"/>
+      <rect x="1108.0" y="216.2" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1121.0,230.0) scale(.45)"/>
+      <rect x="1138.0" y="216.2" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1151.0,230.0) scale(.45)"/>
+      <rect x="1168.0" y="216.2" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1181.0,230.0) scale(.45)"/>
+      <rect x="1198.0" y="216.2" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1211.0,230.0) scale(.45)"/>
+      <rect x="1048.0" y="245.5" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1061.0,259.4) scale(.45)"/>
+      <rect x="1078.0" y="245.5" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1091.0,259.4) scale(.45)"/>
+      <rect x="1108.0" y="245.5" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1121.0,259.4) scale(.45)"/>
+      <rect x="1138.0" y="245.5" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1151.0,259.4) scale(.45)"/>
+      <rect x="1168.0" y="245.5" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1181.0,259.4) scale(.45)"/>
+      <rect x="1198.0" y="245.5" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1211.0,259.4) scale(.45)"/>
+      <rect x="1048.0" y="274.8" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1061.0,288.7) scale(.45)"/>
+      <rect x="1078.0" y="274.8" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1091.0,288.7) scale(.45)"/>
+      <rect x="1108.0" y="274.8" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1121.0,288.7) scale(.45)"/>
+      <rect x="1138.0" y="274.8" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1151.0,288.7) scale(.45)"/>
+      <rect x="1168.0" y="274.8" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1181.0,288.7) scale(.45)"/>
+      <rect x="1198.0" y="274.8" width="26" height="25" rx="2" fill="#101A42" stroke="#243465" stroke-width="1"/>
+      <use href="#fardo" transform="translate(1211.0,288.7) scale(.45)"/>
+      <text x="1138" y="50" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13"
+            font-weight="700" letter-spacing="3" fill="#8FD6F5">DOCA 01</text>
+      <text x="1236" y="334" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="12"
+            font-weight="600" letter-spacing="2" fill="#FFD36B">48 VAGAS OCUPADAS · OUT/2026</text>
+    </g>
+
+    <!-- chao -->
+    <rect x="0" y="312" width="1280" height="48" fill="url(#ff)"/>
+    <line x1="0" y1="312" x2="1280" y2="312" stroke="url(#gf)" stroke-width="2.4" filter="url(#t)"/>
+    <line x1="0" y1="312" x2="1280" y2="312" stroke="#ffffff" stroke-width=".6" opacity=".5"/>
+
+    <!-- ============ SIDER, lona aberta ============ -->
+    <g>
+      <ellipse cx="290" cy="318" rx="300" ry="13" fill="#8A4BFF" opacity=".5" filter="url(#s)"/>
+
+      <path d="M 118 112 L 66 112 Q 56 112 51 119 L 30 152 L 14 156 Q 6 158 6 166 L 6 222 L 118 222 Z"
+            fill="#070B1C" stroke="url(#g)" stroke-width="3.2" stroke-linejoin="round"/>
+      <path d="M 62 120 L 112 120 L 112 150 L 62 150 Z" fill="#1B8BFF" opacity=".28"/>
+      <path d="M 50 120 L 58 120 L 38 150 L 20 150 Z" fill="#2BE9F5" opacity=".32"/>
+      <circle cx="11" cy="204" r="5.5" fill="#EAF6FF"/>
+
+      <rect x="118" y="96"  width="402" height="14" rx="4" fill="#070B1C" stroke="url(#g)" stroke-width="2.8"/>
+      <rect x="118" y="222" width="402" height="15" rx="4" fill="#0C1430" stroke="url(#g)" stroke-width="2.8"/>
+      <g stroke="url(#g)" stroke-width="6" stroke-linecap="round">
+        <line x1="124" y1="110" x2="124" y2="222"/>
+        <line x1="514" y1="110" x2="514" y2="222"/>
+      </g>
+      <line x1="330" y1="110" x2="330" y2="222" stroke="#5A4BFF" stroke-width="3.4" opacity=".5"/>
+
+      <g class="cortina">
+        <rect x="130" y="106" width="54" height="118" rx="4" fill="#1B8BFF" opacity=".10"/>
+        <g stroke="#2BE9F5" stroke-width="3.2" opacity=".72" stroke-linecap="round">
+          <line x1="137" y1="112" x2="137" y2="220"/>
+          <line x1="147" y1="112" x2="147" y2="220"/>
+          <line x1="157" y1="112" x2="157" y2="220"/>
+          <line x1="167" y1="112" x2="167" y2="220"/>
+          <line x1="177" y1="112" x2="177" y2="220"/>
+        </g>
+      </g>
+
+      <!-- carga que ainda esta dentro do sider -->
+      <g>
+        <use href="#fardo" x="222" y="203"/><use href="#fardo" x="284" y="203"/>
+        <use href="#fardo" x="222" y="162"/><use href="#fardo" x="284" y="162"/>
+        <use href="#fardo" x="222" y="121"/>
+      </g>
+
+      <g>
+        <circle cx="78"  cy="282" r="27" fill="#05070F" stroke="#8892BF" stroke-width="3.6"/>
+        <circle cx="78"  cy="282" r="12" fill="#0A1024" stroke="url(#g)" stroke-width="3"/>
+        <circle cx="400" cy="282" r="27" fill="#05070F" stroke="#8892BF" stroke-width="3.6"/>
+        <circle cx="400" cy="282" r="12" fill="#0A1024" stroke="url(#g)" stroke-width="3"/>
+        <circle cx="486" cy="282" r="27" fill="#05070F" stroke="#8892BF" stroke-width="3.6"/>
+        <circle cx="486" cy="282" r="12" fill="#0A1024" stroke="url(#g)" stroke-width="3"/>
+      </g>
+    </g>
+
+    <!-- ============ AJUDANTE DE CIMA ============ -->
+    <g transform="translate(470,222)">
+      <g class="flexao">
+        <use href="#homem"/>
+        <path class="bcima" d="M -14 -94 L -2 -56 M 14 -94 L -2 -56"
+              fill="none" stroke="#2BE9F5" stroke-width="9" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- ============ AJUDANTE DO CHAO ============ -->
+    <g transform="translate(600,312)">
+      <ellipse cx="0" cy="6" rx="38" ry="8" fill="#8A4BFF" opacity=".5" filter="url(#s)"/>
+      <g class="tronco">
+        <use href="#homem"/>
+        <path class="bchao" d="M -14 -94 L -2 -56 M 14 -94 L -2 -56"
+              fill="none" stroke="#B14BFF" stroke-width="9" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- ============ PALETE EM MONTAGEM ============ -->
+    <g>
+      <ellipse cx="750" cy="316" rx="120" ry="11" fill="#8A4BFF" opacity=".45" filter="url(#s)"/>
+      <g transform="translate(660,284)"><use href="#palete"/></g>
+      <use href="#fardo" x="688" y="272"/><use href="#fardo" x="750" y="272"/><use href="#fardo" x="812" y="272"/>
+      <use href="#fardo" x="688" y="231"/><use href="#fardo" x="750" y="231"/><use href="#fardo" x="812" y="231"/>
+      <use href="#fardo" x="688" y="190"/>
+      <use href="#fardo" x="750" y="190"/><use href="#fardo" x="812" y="190"/>
+    </g>
+
+    <!-- ============ FARDO SENDO PASSADO (por cima da pilha) ============ -->
+    <g transform="translate(496,158)">
+      <g class="passa"><use href="#fardo"/></g>
+    </g>
+
+    <text x="36" y="344" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600"
+          letter-spacing="3" fill="#9FC2EA" opacity=".8">CADA CAIXA ARREMESSADA E UM COMMIT · A DOCA E O MEU GRAFICO</text>
+
+    <rect x="1" y="1" width="1278" height="358" rx="14" fill="none" stroke="#2BE9F5" stroke-width="1" opacity=".2"/>
+  </g>
+
+  <style>
+    /* ===== ARREMESSO PARA A DOCA =====
+       Sobrescreve a animacao original: em vez de assentar no palete, o
+       fardo sai da mao do ajudante do chao, voa em arco e cai na vaga
+       livre da DOCA 01. Encolhe no voo porque vai para o fundo do galpao. */
+    @keyframes passa {
+      0%   { opacity:0; transform: translate(0,0)        rotate(0deg)    scale(1); }
+      4%   { opacity:1; transform: translate(0,0)        rotate(0deg)    scale(1); }
+      16%  { opacity:1; transform: translate(36px,40px)  rotate(-9deg)   scale(1); }
+      28%  { opacity:1; transform: translate(68px,74px)  rotate(-15deg)  scale(1); }
+      40%  { opacity:1; transform: translate(68px,74px)  rotate(-15deg)  scale(1); }
+      50%  { opacity:1; transform: translate(104px,72px) rotate(-8deg)   scale(1); }
+      57%  { opacity:1; transform: translate(92px,58px)  rotate(12deg)   scale(1); }
+      64%  { opacity:1; transform: translate(206px,-48px)  rotate(-110deg) scale(.88); }
+      73%  { opacity:1; transform: translate(334px,-128px) rotate(-220deg) scale(.74); }
+      83%  { opacity:1; transform: translate(470px,-112px) rotate(-310deg) scale(.58); }
+      90%  { opacity:1; transform: translate(565px,-74px)  rotate(-360deg) scale(.45); }
+      97%  { opacity:1; transform: translate(565px,-74px)  rotate(-360deg) scale(.45); }
+      100% { opacity:0; transform: translate(565px,-74px)  rotate(-360deg) scale(.45); }
+    }
+    /* o braco de baixo agora arremessa em vez de assentar */
+    @keyframes bracoChao {
+      0%,8%    { transform: rotate(22deg); }
+      28%      { transform: rotate(66deg); }
+      44%      { transform: rotate(52deg); }
+      56%      { transform: rotate(86deg); }
+      64%      { transform: rotate(-96deg); }
+      74%      { transform: rotate(-66deg); }
+      92%,100% { transform: rotate(22deg); }
+    }
+    /* o tronco recua e projeta junto com o arremesso */
+    @keyframes tronco {
+      0%,42%   { transform: translate(0,0); }
+      56%      { transform: translate(-7px,3px); }
+      64%      { transform: translate(15px,-2px); }
+      78%      { transform: translate(7px,2px); }
+      94%,100% { transform: translate(0,0); }
+    }
+    /* a vaga pisca no impacto e fica ocupada ate a proxima volta */
+    @keyframes assenta {
+      0%,88%   { fill:#0A1030; stroke:#2BE9F5; stroke-width:1.4; }
+      91%      { fill:#FFD36B; stroke:#FFFFFF; stroke-width:2.6; }
+      95%,99%  { fill:#101A42; stroke:#243465; stroke-width:1; }
+      100%     { fill:#0A1030; stroke:#2BE9F5; stroke-width:1.4; }
+    }
+    .vagaLivre { animation: assenta 4.2s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) { .vagaLivre { animation: none; } }
+  </style>
+</svg>
