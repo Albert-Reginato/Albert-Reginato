@@ -25,7 +25,7 @@ Eu não vim da computação. Vim da operação — do caminhão encostando na do
 
 Hoje faço as duas pontas na **Multiverso Atacado**.
 
-**Coordeno a logística:** recebimento e armazenagem, separação e expedição, roteirização e entrega, frota e motoristas, negociação de frete e o atendimento ao RCA (o representante comercial que vende na rua) e ao cliente final. São mais de 5 anos na área e uma equipe de mais de 15 pessoas.
+**Coordeno a logística:** recebimento e armazenagem, separação e expedição, roteirização e entrega, frota e motoristas, negociação de frete e o atendimento ao RCA (o representante comercial que vende na rua) e ao cliente final. São mais de 5 anos na área e uma equipe de mais de 30 pessoas.
 
 **E construo a tecnologia que essa operação usa:** provisionar o Windows de um PDV do zero (*golden image*), automatizar a frota de computadores das lojas, fazer impressora térmica e de etiqueta falarem a língua certa, e integrar o terminal de pagamento (**TEF**) — incluindo uma prova de conceito rodando esse mesmo TEF em **Linux**.
 
@@ -37,7 +37,7 @@ PS C:\multiverso> Get-Perfil -Nome "Albert" | Format-List
 Nome         : Albert Reginato
 Funcao       : Coordenador Logistico + Desenvolvedor
 Base         : Multiverso Atacado
-Operacao     : 5+ anos | 15+ pessoas na equipe
+Operacao     : 5+ anos | 30+ pessoas na equipe
 Frota        : VW Delivery 11-150 (2025/2026)
 Mentor       : @cesarvcanal
 Stack        : {Node.js, PowerShell, Python, Linux, IA}
@@ -109,7 +109,7 @@ Status       : Automatizando o que eu mesmo opero
   06    Suporte ao RCA e ao cliente      [ OK ]
  ------------------------------------------------
   TEMPO DE CASA ..... 5+ anos de operacao
-  EQUIPE ............ 15+ pessoas
+  EQUIPE ............ 30+ pessoas
   FROTA ............. VW Delivery 11-150
   AVARIA ............ 0 processo sem dono
  ================================================
@@ -268,7 +268,7 @@ Registro em **[Albert-Reginato/aprendizado](https://github.com/Albert-Reginato/a
 <table>
 <tr>
 <td align="center" width="25%"><h3>5+</h3><sub>anos coordenando<br/>logística</sub></td>
-<td align="center" width="25%"><h3>15+</h3><sub>pessoas na<br/>operação</sub></td>
+<td align="center" width="25%"><h3>30+</h3><sub>pessoas na<br/>operação</sub></td>
 <td align="center" width="25%"><h3>3</h3><sub>sistemas em<br/>produção na loja</sub></td>
 <td align="center" width="25%"><h3>0</h3><sub>diplomas de TI<br/>até agora</sub></td>
 </tr>
