@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320"
+     role="img" aria-label="Albert Reginato — Coordenacao Logistica, Desenvolvimento e Automacao de PDV">
+
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#2BE9F5"/>
+      <stop offset="34%"  stop-color="#1B8BFF"/>
+      <stop offset="68%"  stop-color="#5A4BFF"/>
+      <stop offset="100%" stop-color="#B14BFF"/>
+    </linearGradient>
+
+    <linearGradient id="brandFlat" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#2BE9F5"/>
+      <stop offset="50%"  stop-color="#2F7BFF"/>
+      <stop offset="100%" stop-color="#B14BFF"/>
+    </linearGradient>
+
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#ffffff" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="glowBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#1B8BFF" stop-opacity=".50"/>
+      <stop offset="100%" stop-color="#1B8BFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#A24BFF" stop-opacity=".48"/>
+      <stop offset="100%" stop-color="#A24BFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="floorFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#6E4BFF" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#6E4BFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="soft"   x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+    <filter id="softer" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="tight"  x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.4"/></filter>
+
+    <clipPath id="frame"><rect x="0" y="0" width="1280" height="320" rx="14"/></clipPath>
+    <clipPath id="textBand"><rect x="212" y="92" width="560" height="56"/></clipPath>
+
+    <!-- roda: pneu fixo, aro girando -->
+    <g id="roda">
+      <circle r="23" fill="#05070F" stroke="#8892BF" stroke-width="3.6"/>
+      <g class="roda" stroke="#6E7CAE" stroke-width="2" stroke-linecap="round" opacity=".8">
+        <circle r="20.5" fill="none" stroke-dasharray="3 6"/>
+      </g>
+      <g class="roda">
+        <circle r="11" fill="#0A1024" stroke="url(#brand)" stroke-width="2.8"/>
+        <g stroke="#2BE9F5" stroke-width="2.2" stroke-linecap="round" opacity=".95">
+          <line x1="0" y1="-4.5" x2="0"    y2="-10.5"/>
+          <line x1="0" y1="4.5"  x2="0"    y2="10.5"/>
+          <line x1="3.9" y1="2.25"  x2="9.1"  y2="5.25"/>
+          <line x1="-3.9" y1="-2.25" x2="-9.1" y2="-5.25"/>
+          <line x1="3.9" y1="-2.25" x2="9.1"  y2="-5.25"/>
+          <line x1="-3.9" y1="2.25" x2="-9.1" y2="5.25"/>
+        </g>
+        <circle r="3.4" fill="#CFE6FF"/>
+      </g>
+    </g>
+
+    <style>
+      @keyframes dash    { from{stroke-dashoffset:0}          to{stroke-dashoffset:240} }
+      @keyframes breathe { 0%,100%{opacity:.35}               50%{opacity:.9} }
+      @keyframes bob     { 0%,100%{transform:translateY(0)}   50%{transform:translateY(-2.2px)} }
+      @keyframes shine   { from{transform:translateX(0)}      to{transform:translateX(690px)} }
+      @keyframes flicker { 0%,100%{opacity:.55}               40%{opacity:1} 70%{opacity:.7} }
+      @keyframes pulseK  { 0%,100%{opacity:.55}               50%{opacity:1} }
+      @keyframes spin    { to{transform:rotate(360deg)} }
+
+      .arc    { animation: breathe 7s ease-in-out infinite; }
+      .arc2   { animation: breathe 7s ease-in-out infinite reverse; }
+      .lane   { animation: dash 2.2s linear infinite; }
+      .truck  { animation: bob 1.9s ease-in-out infinite; }
+      .lamp   { animation: flicker 3.4s ease-in-out infinite; }
+      .shine  { animation: shine 6s ease-in-out infinite; }
+      .knot   { animation: pulseK 6s ease-in-out infinite; }
+      .roda   { transform-box: fill-box; transform-origin: center; animation: spin .8s linear infinite; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .arc,.arc2,.lane,.truck,.lamp,.shine,.knot,.roda { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+
+    <!-- fundo -->
+    <rect width="1280" height="320" fill="#04060F"/>
+    <ellipse cx="170"  cy="130" rx="430" ry="260" fill="url(#glowBlue)"/>
+    <ellipse cx="1090" cy="150" rx="430" ry="260" fill="url(#glowViolet)"/>
+
+    <!-- arcos de luz, como na logo -->
+    <g fill="none" stroke-linecap="round">
+      <path class="arc"  d="M -40 330 C 120 110, 330 -20, 560 -70"   stroke="#2BE9F5" stroke-width="2.4" opacity=".55" filter="url(#tight)"/>
+      <path class="arc"  d="M -70 300 C 110 120, 300 10, 520 -40"    stroke="#1B8BFF" stroke-width="1.2" opacity=".40"/>
+      <path class="arc2" d="M 1320 330 C 1170 110, 960 -20, 730 -70" stroke="#B14BFF" stroke-width="2.4" opacity=".55" filter="url(#tight)"/>
+      <path class="arc2" d="M 1350 300 C 1180 120, 990 10, 770 -40"  stroke="#7A4BFF" stroke-width="1.2" opacity=".40"/>
+    </g>
+
+    <!-- piso + horizonte -->
+    <rect x="0" y="252" width="1280" height="68" fill="url(#floorFade)"/>
+    <line x1="0" y1="252" x2="1280" y2="252" stroke="url(#brandFlat)" stroke-width="2.6" filter="url(#tight)"/>
+    <line x1="0" y1="252" x2="1280" y2="252" stroke="#ffffff" stroke-width=".7" opacity=".6"/>
+    <line class="lane" x1="0" y1="286" x2="1280" y2="286" stroke="#2BE9F5" stroke-width="2"
+          stroke-dasharray="46 34" opacity=".28"/>
+    <line class="lane" x1="0" y1="306" x2="1280" y2="306" stroke="#A24BFF" stroke-width="2.4"
+          stroke-dasharray="70 50" opacity=".20"/>
+
+    <!-- selo: no do Multiverso, releitura em vetor -->
+    <g transform="translate(118,158)">
+      <g class="knot" filter="url(#soft)" fill="none" stroke="url(#brand)" stroke-width="12" stroke-linecap="round">
+        <ellipse cx="0" cy="-38" rx="32" ry="34"/>
+        <ellipse cx="0" cy="-38" rx="32" ry="34" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-38" rx="32" ry="34" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-38" rx="32" ry="34" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-38" rx="32" ry="34" transform="rotate(288)"/>
+      </g>
+      <g fill="none" stroke="url(#brand)" stroke-width="11" stroke-linecap="round">
+        <ellipse cx="0" cy="-38" rx="32" ry="34"/>
+        <ellipse cx="0" cy="-38" rx="32" ry="34" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-38" rx="32" ry="34" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-38" rx="32" ry="34" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-38" rx="32" ry="34" transform="rotate(288)"/>
+      </g>
+    </g>
+
+    <!-- texto -->
+    <g font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif">
+      <text x="214" y="126" font-size="52" font-weight="700" fill="#F2F6FF" letter-spacing="1.5">ALBERT REGINATO</text>
+
+      <g clip-path="url(#textBand)" opacity=".20">
+        <rect class="shine" x="96"  y="92" width="110" height="56" fill="url(#sweep)"/>
+      </g>
+
+      <rect x="215" y="144" width="148" height="2.6" fill="url(#brandFlat)" filter="url(#tight)"/>
+
+      <text x="214" y="176" font-size="15" font-weight="600" fill="#8FE9FF"
+            textLength="600" lengthAdjust="spacing">COORDENAÇÃO LOGÍSTICA · DESENVOLVIMENTO · AUTOMAÇÃO DE PDV</text>
+
+      <text x="214" y="210" font-size="17" fill="#B9C6E8" font-style="italic">Coordeno a operação — e construo o sistema que ela usa.</text>
+    </g>
+
+    <!-- caminhao da frota (perfil tipo VW Delivery 11-150) -->
+    <g transform="translate(852,106) scale(.95)">
+
+
+      <!-- luz sob o chassi -->
+      <ellipse cx="190" cy="150" rx="195" ry="15" fill="#8A4BFF" opacity=".55" filter="url(#softer)"/>
+
+      <g class="truck">
+        <!-- bau -->
+        <rect x="0" y="6" width="248" height="100" rx="5" fill="#070B1C" stroke="url(#brand)" stroke-width="3"/>
+        <rect x="0" y="6" width="248" height="100" rx="5" fill="none" stroke="#2BE9F5" stroke-width="1" opacity=".5" filter="url(#tight)"/>
+        <line x1="12" y1="84" x2="236" y2="84" stroke="#1B8BFF" stroke-width="2" opacity=".5"/>
+        <g transform="translate(40,50) scale(.25)" fill="none" stroke="url(#brand)" stroke-width="18" opacity=".95">
+          <ellipse cx="0" cy="-38" rx="32" ry="34"/>
+          <ellipse cx="0" cy="-38" rx="32" ry="34" transform="rotate(72)"/>
+          <ellipse cx="0" cy="-38" rx="32" ry="34" transform="rotate(144)"/>
+          <ellipse cx="0" cy="-38" rx="32" ry="34" transform="rotate(216)"/>
+          <ellipse cx="0" cy="-38" rx="32" ry="34" transform="rotate(288)"/>
+        </g>
+        <text x="74" y="58" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700"
+              letter-spacing="1.6" fill="#CFE6FF" opacity=".92">MULTIVERSO</text>
+
+        <!-- cabine -->
+        <path d="M 252 30 L 304 30 Q 310 30 314 35 L 334 60 L 362 64 Q 368 65 368 72 L 368 104 L 252 104 Z"
+              fill="#070B1C" stroke="url(#brand)" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M 258 38 L 302 38 L 302 62 L 258 62 Z" fill="#1B8BFF" opacity=".30"/>
+        <path d="M 308 38 L 314 38 L 332 60 L 308 60 Z" fill="#2BE9F5" opacity=".35"/>
+        <rect x="246" y="56" width="10" height="20" rx="3" fill="#2BE9F5" opacity=".7"/>
+
+        <!-- chassi -->
+        <rect x="0" y="104" width="368" height="9" rx="3" fill="#0C1430" stroke="#5A4BFF" stroke-width="1.4"/>
+
+        <!-- farol -->
+        <g class="lamp">
+          <circle cx="364" cy="88" r="6" fill="#EAF6FF"/>
+          <path d="M 368 88 L 470 58 L 470 118 Z" fill="#9FE8FF" opacity=".30" filter="url(#soft)"/>
+        </g>
+        <circle cx="4" cy="92" r="4.5" fill="#FF4B7A" opacity=".9"/>
+
+        <!-- rodas -->
+        <use href="#roda" x="62"  y="124"/>
+        <use href="#roda" x="322" y="124"/>
+      </g>
+
+      <!-- reflexo no piso -->
+      <g opacity=".15" transform="translate(0,296) scale(1,-1)" filter="url(#soft)">
+        <rect x="0" y="6" width="248" height="100" rx="5" fill="none" stroke="url(#brand)" stroke-width="3"/>
+        <path d="M 252 30 L 304 30 L 334 60 L 368 64 L 368 104 L 252 104 Z" fill="none" stroke="url(#brand)" stroke-width="3"/>
+      </g>
+    </g>
+
+    <rect x="1" y="1" width="1278" height="318" rx="14" fill="none" stroke="#2BE9F5" stroke-width="1" opacity=".22"/>
+  </g>
+</svg>

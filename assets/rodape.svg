@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 140" width="1280" height="140" role="presentation">
+  <defs>
+    <linearGradient id="w1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#B14BFF"/>
+      <stop offset="52%"  stop-color="#2F7BFF"/>
+      <stop offset="100%" stop-color="#2BE9F5"/>
+    </linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#7A4BFF" stop-opacity=".55"/>
+      <stop offset="60%"  stop-color="#1B8BFF" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#2BE9F5" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="w3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#5A2BAF" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#1B6BBF" stop-opacity=".35"/>
+    </linearGradient>
+    <filter id="wb" x="-20%" y="-60%" width="140%" height="260%"><feGaussianBlur stdDeviation="5"/></filter>
+    <style>
+      @keyframes swayA { 0%,100%{transform:translateX(0)}   50%{transform:translateX(-34px)} }
+      @keyframes swayB { 0%,100%{transform:translateX(0)}   50%{transform:translateX(26px)} }
+      @keyframes swayC { 0%,100%{transform:translateX(0)}   50%{transform:translateX(-18px)} }
+      .a { animation: swayA 11s ease-in-out infinite; }
+      .b { animation: swayB 9s  ease-in-out infinite; }
+      .c { animation: swayC 14s ease-in-out infinite; }
+      @media (prefers-reduced-motion: reduce) { .a,.b,.c { animation: none; } }
+    </style>
+  </defs>
+
+  <!-- as ondas nascem 60 alem das bordas, entao o balanco nunca abre buraco -->
+  <g class="c">
+    <path d="M -60 96 C 180 58, 400 128, 660 92 C 900 58, 1100 112, 1340 80 L 1340 200 L -60 200 Z" fill="url(#w3)"/>
+  </g>
+  <g class="b">
+    <path d="M -60 110 C 220 74, 420 136, 700 104 C 940 76, 1120 124, 1340 98 L 1340 200 L -60 200 Z" fill="url(#w2)"/>
+  </g>
+  <g class="a">
+    <path d="M -60 124 C 200 92, 460 146, 720 118 C 960 92, 1140 134, 1340 114 L 1340 200 L -60 200 Z" fill="url(#w1)"/>
+    <path d="M -60 124 C 200 92, 460 146, 720 118 C 960 92, 1140 134, 1340 114"
+          fill="none" stroke="#9FF0FF" stroke-width="2" opacity=".5" filter="url(#wb)"/>
+  </g>
+</svg>
